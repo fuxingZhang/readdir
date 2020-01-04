@@ -1,0 +1,29 @@
+{
+  "name": "@zhangfuxing/readdir",
+  "version": "1.0.0",
+  "description": "Get the absolute path of files in a folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuxingZhang/readdir.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "readdir",
+    "getFilePaths",
+    "getFolderFilePaths"
+  ],
+  "author": "Zhang Fu Xing <502545703@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fuxingZhang/readdir/issues"
+  },
+  "homepage": "https://github.com/fuxingZhang/readdir#readme",
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  }
+}
