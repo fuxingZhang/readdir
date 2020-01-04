@@ -9,10 +9,11 @@ $ npm i @zhangfuxing/readdir
 
 ## Useage  
 
-### use Synchronous method
+### use synchronous method
 
 ```js
 const assert = require('assert');
+const path = require('path');
 const { getFilePathsSync } = require('@zhangfuxing/readdir');
 const paths = getFilePathsSync('./test');
 const testFilePath = path.resolve('./test/index.test.js');
@@ -25,6 +26,7 @@ assert(paths[0] === testFilePath);
 ### use asynchronous method
 ```js
 const assert = require('assert');
+const path = require('path');
 const { getFilePaths } = require('@zhangfuxing/readdir');
 const testFilePath = path.resolve('./test/index.test.js');
 
@@ -34,7 +36,7 @@ const testFilePath = path.resolve('./test/index.test.js');
   assert(Array.isArray(paths));
   assert(paths.length === 1);
   assert(paths[0] === testFilePath);
-})()(console.error);
+})().catch(console.error);
 ```  
 
 ## Test
